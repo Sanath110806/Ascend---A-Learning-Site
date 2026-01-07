@@ -1,0 +1,410 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #020308;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.page {
+    width: 100%;
+    max-width: 100%;
+    background: #05060c;
+    border-radius: 0;
+    border: none;
+    padding: 20px 30px;
+    min-height: 100vh;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #05060c;
+}
+
+.logo-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logo-subtitle {
+    font-size: 11px;
+    color: #8a8d9c;
+}
+
+.nav {
+    display: flex;
+    gap: 6px;
+}
+
+.nav-link {
+    border: none;
+    background: transparent;
+    color: #b4b6c5;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover {
+    background: #14151d;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background: #f5f5f5;
+    color: #05060c;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user span {
+    font-size: 12px;
+    color: #d4d6e3;
+}
+
+.avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background: #101118;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.hero {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-main {
+    flex: 2;
+    background: #080910;
+    border-radius: 10px;
+    padding: 14px 15px;
+}
+
+.hero-main h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.hero-text {
+    font-size: 13px;
+    color: #a0a3b0;
+    margin-bottom: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.btn {
+    border-radius: 999px;
+    padding: 7px 12px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.primary {
+    background: #f5f5f5;
+    color: #05060c;
+}
+
+.primary:hover {
+    filter: brightness(0.95);
+}
+
+.secondary {
+    background: transparent;
+    color: #f5f5f5;
+    border: 1px solid #2b2c35;
+}
+
+.secondary:hover {
+    background: #11121a;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: #0c0d15;
+    border-radius: 10px;
+    padding: 8px 9px;
+    min-width: 90px;
+}
+
+.stat-number {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #9a9dac;
+}
+
+.hero-side {
+    flex: 1;
+    min-width: 230px;
+    background: #080910;
+    border-radius: 10px;
+    padding: 12px 13px;
+}
+
+.side-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.side-course {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.side-meta {
+    font-size: 11px;
+    color: #9a9dac;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: #12131c;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    width: 55%;
+    height: 100%;
+    background: #f5f5f5;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    background: #101118;
+    color: #d4d6e3;
+}
+
+.content-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.courses {
+    flex: 2;
+    min-width: 260px;
+    background: #080910;
+    border-radius: 10px;
+    padding: 12px 13px;
+}
+
+.courses-header h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-card {
+    background: #0c0d15;
+    border-radius: 8px;
+    padding: 8px 9px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.course-card:hover {
+    background: #12131c;
+    transform: translateY(-2px);
+}
+
+.course-name {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.course-info {
+    font-size: 11px;
+    color: #b1b3c2;
+}
+
+.side-panel {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel {
+    background: #080910;
+    border-radius: 10px;
+    padding: 12px 13px;
+}
+
+.panel h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.todo {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: #2b2c35;
+    margin-right: 6px;
+}
+
+.dot.done {
+    background: #f5f5f5;
+}
+
+.search-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.search-row input {
+    flex: 1;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: 1px solid #23242e;
+    background: #05060c;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+
+.search-row button {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    background: #f5f5f5;
+    color: #05060c;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-row button:hover {
+    filter: brightness(0.95);
+}
+
+.search-text {
+    font-size: 11px;
+    color: #9a9dac;
+}
+
+.pulse {
+    animation: pulseBox 0.5s ease-out;
+}
+
+@keyframes pulseBox {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 800px) {
+    .page {
+        padding: 12px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .hero-main h1 {
+        font-size: 18px;
+    }
+}
