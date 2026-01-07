@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ascend - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo-box">A</div>
+                <div class="logo-texts">
+                    <div class="logo-title">Ascend</div>
+                    <div class="logo-subtitle">Educational learning platform</div>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <button class="nav-link active">Home</button>
+                <button class="nav-link">Courses</button>
+                <button class="nav-link">Classrooms</button>
+                <button class="nav-link">Profile</button>
+            </nav>
+
+            <div class="user">
+                <span id="greeting">Welcome back</span>
+                <div class="avatar">S</div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <div class="hero-main">
+                    <h1>All your learning in one simple place.</h1>
+                    <p class="hero-text">
+                        Ascend is a small mix of Google Classroom and Skillshare.
+                        Watch videos, track progress and stop losing links in WhatsApp.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn primary" id="continueBtn">Continue watching</button>
+                        <button class="btn secondary">Browse courses</button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Videos today</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Active courses</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Classrooms</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-side" id="currentCard">
+                    <h2 class="side-title">Current video</h2>
+                    <p class="side-course">Object Oriented Java - Basics</p>
+                    <p class="side-meta">Module 2 • 12:41 / 22:10</p>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>OOP</span>
+                        <span>College</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-row">
+                <div class="courses">
+                    <div class="courses-header">
+                        <h2>Your courses</h2>
+                    </div>
+
+                    <div class="course-list" id="courseList">
+                        <div class="course-card">
+                            <div class="course-name">Operating Systems - CPU Scheduling</div>
+                            <div class="course-info">College • 4 / 10 videos done</div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-name">Basic Web Dev with HTML & CSS</div>
+                            <div class="course-info">Skill • 3 / 8 videos done</div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-name">JavaScript for beginners</div>
+                            <div class="course-info">Skill • 1 / 12 videos done</div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-name">Linear Algebra - SVD basics</div>
+                            <div class="course-info">College • 2 / 6 videos done</div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="side-panel">
+                    <div class="panel">
+                        <h3>Today on Ascend</h3>
+                        <ul class="todo">
+                            <li><span class="dot done"></span>Finish OS video</li>
+                            <li><span class="dot"></span>Watch 1 JavaScript video</li>
+                            <li><span class="dot"></span>Review lab notes</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>Quick search</h3>
+                        <div class="search-row">
+                            <input type="text" id="searchInput" placeholder="Search course or topic">
+                            <button id="searchBtn">Go</button>
+                        </div>
+                        <p class="search-text" id="searchText">Try typing "Java" or "OS".</p>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
